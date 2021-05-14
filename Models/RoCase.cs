@@ -44,15 +44,13 @@ namespace netcoreapi.Models
         public string CreatedOn { get; set; }
         public string ModifiedOn { get; set; }
         public string ModifiedBy { get; set; }
-        public string StatusCode { get; set; }
-
-
+        public string StatusCode { get; set; }      
         public string LevelofProblem { get; set; }
         public string CaseTitle { get; set; }
         public string CaseType { get; set; }
         public string CaseSubject { get; set; }
         public string CaseDescription { get; set; }
-
+        public string StatusCodeText { get; set; }
         internal AppDb Db { get; set; }
 
         public RoCase()

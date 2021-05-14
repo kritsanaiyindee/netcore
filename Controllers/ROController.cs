@@ -76,7 +76,7 @@ namespace netcoreapi.Controllers
 
                 try
                 {
-                    WSCheckHistoryRORequest wr = new WSCheckHistoryRORequest();
+                    WSCheckHistoryRORequest wr = new   WSCheckHistoryRORequest();
                     wr.CMPCDE = "110059";
                     wr.OFFCDE = "110059";
                     wr.RONO = "RO59-2103-0016";
@@ -109,6 +109,16 @@ namespace netcoreapi.Controllers
             
            
         }
+        [HttpGet("Edit/{roid}")]
+        public async Task<IActionResult> getRO(string roid)
+        {
+
+            await Db.Connection.OpenAsync();
+            var query = new CasetQuery(Db);
+            var result = await query.getRO(roid);
+            return new OkObjectResult(result != null ? result : new RoCase());
+
+        }
 
 
         // GET api/blog/5
@@ -124,13 +134,24 @@ namespace netcoreapi.Controllers
         }
 
         // GET api/blog/5
-        [HttpGet("list/{dealer}")]
+        [HttpGet("{dealer}/{userid}")]
         public async Task<IActionResult> ListbyDealer(string dealer,string userid)
         {
 
             await Db.Connection.OpenAsync();
             var query = new CasetQuery(Db);
             var result = await query.ListOwnerCase(dealer, userid);
+            return new OkObjectResult(result != null ? result : new RoCase());
+
+        }
+        // GET api/blog/5
+        [HttpGet("{dealer}/{userid}/{statuscode}")]
+        public async Task<IActionResult> ListbyDealer(string dealer, string userid,int statuscode)
+        {
+
+            await Db.Connection.OpenAsync();
+            var query = new CasetQuery(Db);
+            var result = await query.ListOwnerCaseBystatus(dealer, userid, statuscode);
             return new OkObjectResult(result != null ? result : new RoCase());
 
         }

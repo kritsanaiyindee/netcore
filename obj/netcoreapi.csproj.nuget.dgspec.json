@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\flutter\\netcoreapi\\netcoreapi.csproj": {}
+    "C:\\flutter\\netcoreapi\\netcore\\netcoreapi.csproj": {}
   },
   "projects": {
-    "C:\\flutter\\netcoreapi\\netcoreapi.csproj": {
+    "C:\\flutter\\netcoreapi\\netcore\\netcoreapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\flutter\\netcoreapi\\netcoreapi.csproj",
+        "projectUniqueName": "C:\\flutter\\netcoreapi\\netcore\\netcoreapi.csproj",
         "projectName": "netcoreapi",
-        "projectPath": "C:\\flutter\\netcoreapi\\netcoreapi.csproj",
+        "projectPath": "C:\\flutter\\netcoreapi\\netcore\\netcoreapi.csproj",
         "packagesPath": "C:\\Users\\HT170305\\.nuget\\packages\\",
-        "outputPath": "C:\\flutter\\netcoreapi\\obj\\",
+        "outputPath": "C:\\flutter\\netcoreapi\\netcore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -77,6 +77,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.Private.ServiceModel": {
+              "target": "Package",
+              "version": "[4.8.1, )"
             },
             "System.ServiceModel.Http": {
               "target": "Package",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\flutter\\netcoreapi\\netcoreapi.csproj": {}
+    "C:\\flutter\\netcoreapi\\netcore\\netcoreapi.csproj": {}
   },
   "projects": {
-    "C:\\flutter\\netcoreapi\\netcoreapi.csproj": {
+    "C:\\flutter\\netcoreapi\\netcore\\netcoreapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\flutter\\netcoreapi\\netcoreapi.csproj",
+        "projectUniqueName": "C:\\flutter\\netcoreapi\\netcore\\netcoreapi.csproj",
         "projectName": "netcoreapi",
-        "projectPath": "C:\\flutter\\netcoreapi\\netcoreapi.csproj",
+        "projectPath": "C:\\flutter\\netcoreapi\\netcore\\netcoreapi.csproj",
         "packagesPath": "C:\\Users\\HT170305\\.nuget\\packages\\",
-        "outputPath": "C:\\flutter\\netcoreapi\\obj\\publish\\win-x64\\",
+        "outputPath": "C:\\flutter\\netcoreapi\\netcore\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

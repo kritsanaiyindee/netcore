@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7EhgwKFGVozfauU+r3a9m86hn7cEsHGJhLHGiWc/TL0/CZK1wlPpxflQHr3+Ec++wdxu0062cUqFBttmxtoZCw==",
+  "dgSpecHash": "FA/UdXitKUJP0KcWxg278OgKbDRE+mg0uTvoInwI98enSSu25lRgQVQ4ipQltFzDGOjbBRh2rKrdUWZj4vunUw==",
   "success": true,
-  "projectFilePath": "C:\\flutter\\netcoreapi\\netcoreapi.csproj",
+  "projectFilePath": "C:\\flutter\\netcoreapi\\netcore\\netcoreapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HT170305\\.nuget\\packages\\google.protobuf\\3.13.0\\google.protobuf.3.13.0.nupkg.sha512",
     "C:\\Users\\HT170305\\.nuget\\packages\\grpc.aspnetcore\\2.32.0\\grpc.aspnetcore.2.32.0.nupkg.sha512",

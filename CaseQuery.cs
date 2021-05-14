@@ -20,7 +20,7 @@ namespace netcoreapinet
         public async Task<RoCase> ValidateRunumber(string  ro_number)
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"SELECT * FROM ro_case WHERE OUT_ROCODE = @OUT_ROCODE ";
+            cmd.CommandText = @"SELECT * FROM vRoCase WHERE OUT_ROCODE = @OUT_ROCODE ";
             cmd.Parameters.Add(new SqlParameter
             {
                 ParameterName = "@OUT_ROCODE",
@@ -30,10 +30,23 @@ namespace netcoreapinet
             var result = await ReadAllAsync(await cmd.ExecuteReaderAsync());
             return result.Count > 0 ? result[0] : null;
         }
-        public async Task<RoCase> ListOwnerCase(string dealer,string createdby)
+        public async Task<RoCase> getRO(string ROID)
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"SELECT * FROM ro_case WHERE OUT_OFFCDE = @OUT_OFFCDE  and CREATED_BY=@CREATED_BY ";
+            cmd.CommandText = @"SELECT * FROM vRoCase WHERE id = @ROID ";
+            cmd.Parameters.Add(new SqlParameter
+            {
+                ParameterName = "@ROID",
+                DbType = DbType.String,
+                Value = ROID,
+            });
+            var result = await ReadAllAsync(await cmd.ExecuteReaderAsync());
+            return result.Count > 0 ? result[0] : null;
+        }
+        public async Task<List<RoCase>> ListOwnerCase(string dealer,string createdby)
+        {
+            using var cmd = Db.Connection.CreateCommand();
+            cmd.CommandText = @"SELECT * FROM vrocase WHERE OUT_OFFCDE = @OUT_OFFCDE  and CREATED_BY=@CREATED_BY ";
             cmd.Parameters.Add(new SqlParameter
             {
                 ParameterName = "@OUT_OFFCDE",
@@ -47,7 +60,27 @@ namespace netcoreapinet
                 Value = createdby,
             });
             var result = await ReadAllAsync(await cmd.ExecuteReaderAsync());
-            return result.Count > 0 ? result[0] : null;
+            return result.Count > 0 ? result : null;
+        }
+        public async Task<List<RoCase>> ListOwnerCaseBystatus(string dealer, string createdby, int statuscode)
+        {
+            string statusGroup = statuscode < 1 ? "(1,2,3,4)" : "(5,6)";
+            using var cmd = Db.Connection.CreateCommand();
+            cmd.CommandText = @"SELECT * FROM vrocase WHERE OUT_OFFCDE = @OUT_OFFCDE  and STATUS_CODE in "+ statusGroup + "  and CREATED_BY=@CREATED_BY ";
+            cmd.Parameters.Add(new SqlParameter
+            {
+                ParameterName = "@OUT_OFFCDE",
+                DbType = DbType.String,
+                Value = dealer,
+            });
+            cmd.Parameters.Add(new SqlParameter
+            {
+                ParameterName = "@CREATED_BY",
+                DbType = DbType.String,
+                Value = createdby,
+            });
+            var result = await ReadAllAsync(await cmd.ExecuteReaderAsync());
+            return result.Count > 0 ? result : null;
         }
         public async Task<List<RoCase>> LatestPostsAsync()
         {
@@ -85,7 +118,7 @@ namespace netcoreapinet
       ,[CREATED_ON]
       ,[MODIFIED_ON]
       ,[MODIFIED_BY]
-      ,[STATUS_CODE] FROM ro_case ORDER BY Id DESC ";
+      ,[STATUS_CODE],statusCodeText FROM vrocase ORDER BY Id DESC ";
             return await ReadAllAsync(await cmd.ExecuteReaderAsync());
         }
 
@@ -105,7 +138,7 @@ namespace netcoreapinet
             {
                 while (await reader.ReadAsync())
                 {
-                    var post = new RoCase(Db)
+                        var post = new RoCase(Db)
                     {
                         Id = reader.GetInt32(0)+"",
                         Diffgrid = reader.GetString(1),
@@ -142,6 +175,12 @@ namespace netcoreapinet
                         ModifiedOn = reader.GetDateTime(31).ToString(),
                         ModifiedBy = reader.GetString(32),
                         StatusCode = reader.GetString(33),
+                        LevelofProblem= reader.GetString(34),
+                        CaseTitle= reader.GetString(35),
+                        CaseType= reader.GetString(36),
+                        CaseSubject= reader.GetString(37),
+                        CaseDescription =reader.GetString(38),
+                        StatusCodeText = reader.GetString(39),
                     };
                     posts.Add(post);
                 }
