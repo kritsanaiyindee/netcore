@@ -12,8 +12,8 @@ namespace netcoreapi.Models
     public partial class RoCase
     {
         public string Id { get; set; }
-        public string Diffgrid { get; set; }
-        public string MsdatarowOrder { get; set; }
+        public string CaseID { get; set; }
+        public string Dealer { get; set; }
         public string OutOffcde { get; set; }
         public string OutCmpcde { get; set; }
         public string OutRocode { get; set; }
@@ -92,7 +92,7 @@ namespace netcoreapi.Models
         {
             int returnValue = -1;
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"INSERT INTO ro_case (diffgrid, msdatarowOrder,[OUT_OFFCDE]
+            cmd.CommandText = @"INSERT INTO ro_case (CASEID, Dealer,[OUT_OFFCDE]
       ,[OUT_CMPCDE]
       ,[OUT_ROCODE]
       ,[OUT_CUST_DATE]
@@ -122,7 +122,7 @@ namespace netcoreapi.Models
       ,[CREATED_ON]
       ,[MODIFIED_ON]
       ,[MODIFIED_BY]
-      ,[STATUS_CODE],LevelofProblem,CaseTitle,CaseType,CaseSubject,CaseDescription) OUTPUT Inserted.ID VALUES        (@diffgrid, @msdatarowOrder,@OutOffcde
+      ,[STATUS_CODE],LevelofProblem,CaseTitle,CaseType,CaseSubject,CaseDescription) OUTPUT Inserted.ID VALUES        ( @CaseID,@Dealer,@OutOffcde
       ,@OutCmpcde
       ,@OutRocode
       ,@OutCustDate
@@ -168,15 +168,15 @@ namespace netcoreapi.Models
         {
             cmd.Parameters.Add(new SqlParameter
             {
-                ParameterName = "@Diffgrid",
+                ParameterName = "@CaseID",
                 DbType = DbType.String,
-                Value = Diffgrid,
+                Value = CaseID,
             });
             cmd.Parameters.Add(new SqlParameter
             {
-                ParameterName = "@MsdatarowOrder",
+                ParameterName = "@Dealer",
                 DbType = DbType.String,
-                Value = MsdatarowOrder,
+                Value = Dealer,
             });
             
             cmd.Parameters.Add(new SqlParameter

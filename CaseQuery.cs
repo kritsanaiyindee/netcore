@@ -85,9 +85,9 @@ namespace netcoreapinet
         public async Task<List<RoCase>> LatestPostsAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"SELECT  top 10 [id]
-      ,[diffgrid]
-      ,[msdatarowOrder]
+            cmd.CommandText = @"SELECT  top 100 [id]
+      ,CASEID
+      ,DEALER
       ,[OUT_OFFCDE]
       ,[OUT_CMPCDE]
       ,[OUT_ROCODE]
@@ -141,8 +141,8 @@ namespace netcoreapinet
                         var post = new RoCase(Db)
                     {
                         Id = reader.GetInt32(0)+"",
-                        Diffgrid = reader.GetString(1),
-                        MsdatarowOrder = reader.GetString(2),
+                        CaseID = reader.GetString(1),
+                        Dealer = reader.GetString(2),
                         OutOffcde = reader.GetString(3),
                         OutCmpcde = reader.GetString(4),
                         OutRocode = reader.GetString(5),

@@ -53,4 +53,14 @@ C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\runtimes\win-x86\nat
 C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Crm.Sdk.Proxy.dll
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Xrm.Sdk.Deployment.dll
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Xrm.Sdk.dll
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Xrm.Sdk.Workflow.dll
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Xrm.Tooling.Connector.dll
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Crm.Sdk.Proxy.xml
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Xrm.Sdk.xml
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Xrm.Sdk.Deployment.xml
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Xrm.Sdk.Workflow.xml
+C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\Microsoft.Xrm.Tooling.Connector.xml
 C:\flutter\netcoreapi\netcore\obj\Release\net5.0\PubTmp\Out\netcoreapi.deps.json

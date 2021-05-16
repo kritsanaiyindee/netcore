@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>ftp://phoebe.hms-cloud.com</_PublishTargetUrl>
-    <History>True|2021-05-13T08:51:57.3868106Z;True|2021-05-13T15:45:41.4777399+07:00;True|2021-05-11T11:16:10.3912652+07:00;True|2021-05-11T09:57:19.8403991+07:00;True|2021-05-10T20:24:56.9977073+07:00;True|2021-05-10T20:21:23.3931496+07:00;False|2021-05-10T20:16:41.0959814+07:00;False|2021-05-10T20:16:24.8549516+07:00;True|2021-05-10T20:08:01.8857871+07:00;True|2021-05-10T20:00:37.9699924+07:00;True|2021-05-10T19:52:29.9076584+07:00;True|2021-05-10T19:26:08.2168627+07:00;True|2021-05-10T19:22:28.2872325+07:00;True|2021-05-03T18:38:33.0188427+07:00;</History>
+    <History>True|2021-05-16T03:22:43.2560535Z;True|2021-05-13T15:51:57.3868106+07:00;True|2021-05-13T15:45:41.4777399+07:00;True|2021-05-11T11:16:10.3912652+07:00;True|2021-05-11T09:57:19.8403991+07:00;True|2021-05-10T20:24:56.9977073+07:00;True|2021-05-10T20:21:23.3931496+07:00;False|2021-05-10T20:16:41.0959814+07:00;False|2021-05-10T20:16:24.8549516+07:00;True|2021-05-10T20:08:01.8857871+07:00;True|2021-05-10T20:00:37.9699924+07:00;True|2021-05-10T19:52:29.9076584+07:00;True|2021-05-10T19:26:08.2168627+07:00;True|2021-05-10T19:22:28.2872325+07:00;True|2021-05-03T18:38:33.0188427+07:00;</History>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword />
   </PropertyGroup>
@@ -421,6 +421,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Microsoft.AspNetCore.WebUtilities.dll">
       <publishTime>03/17/2021 20:37:08</publishTime>
     </File>
+    <File Include="Microsoft.Crm.Sdk.Proxy.dll">
+      <publishTime>04/02/2021 22:40:32</publishTime>
+    </File>
+    <File Include="Microsoft.Crm.Sdk.Proxy.xml">
+      <publishTime>02/18/2021 02:34:06</publishTime>
+    </File>
     <File Include="Microsoft.CSharp.dll">
       <publishTime>03/16/2021 23:07:06</publishTime>
     </File>
@@ -625,6 +631,30 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Microsoft.Win32.SystemEvents.dll">
       <publishTime>03/17/2021 20:36:46</publishTime>
     </File>
+    <File Include="Microsoft.Xrm.Sdk.Deployment.dll">
+      <publishTime>06/01/2020 19:24:30</publishTime>
+    </File>
+    <File Include="Microsoft.Xrm.Sdk.Deployment.xml">
+      <publishTime>10/25/2019 22:51:20</publishTime>
+    </File>
+    <File Include="Microsoft.Xrm.Sdk.dll">
+      <publishTime>04/02/2021 22:40:32</publishTime>
+    </File>
+    <File Include="Microsoft.Xrm.Sdk.Workflow.dll">
+      <publishTime>06/01/2020 19:24:30</publishTime>
+    </File>
+    <File Include="Microsoft.Xrm.Sdk.Workflow.xml">
+      <publishTime>10/25/2019 22:51:22</publishTime>
+    </File>
+    <File Include="Microsoft.Xrm.Sdk.xml">
+      <publishTime>02/18/2021 02:34:06</publishTime>
+    </File>
+    <File Include="Microsoft.Xrm.Tooling.Connector.dll">
+      <publishTime>04/28/2021 21:26:20</publishTime>
+    </File>
+    <File Include="Microsoft.Xrm.Tooling.Connector.xml">
+      <publishTime>04/28/2021 21:18:08</publishTime>
+    </File>
     <File Include="mscordaccore.dll">
       <publishTime>03/16/2021 23:02:30</publishTime>
     </File>
@@ -644,19 +674,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/24/2021 14:23:14</publishTime>
     </File>
     <File Include="netcoreapi.deps.json">
-      <publishTime>05/13/2021 15:51:51</publishTime>
+      <publishTime>05/16/2021 10:22:27</publishTime>
     </File>
     <File Include="netcoreapi.dll">
-      <publishTime>05/13/2021 15:51:49</publishTime>
+      <publishTime>05/16/2021 10:22:18</publishTime>
     </File>
     <File Include="netcoreapi.exe">
-      <publishTime>05/13/2021 15:51:49</publishTime>
+      <publishTime>05/16/2021 10:22:18</publishTime>
     </File>
     <File Include="netcoreapi.pdb">
-      <publishTime>05/13/2021 15:51:49</publishTime>
+      <publishTime>05/16/2021 10:22:18</publishTime>
     </File>
     <File Include="netcoreapi.runtimeconfig.json">
-      <publishTime>05/13/2021 15:45:26</publishTime>
+      <publishTime>05/16/2021 10:22:19</publishTime>
     </File>
     <File Include="netstandard.dll">
       <publishTime>03/16/2021 23:07:06</publishTime>
@@ -1229,7 +1259,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/06/2019 22:09:26</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/13/2021 15:51:51</publishTime>
+      <publishTime>05/16/2021 10:22:27</publishTime>
     </File>
     <File Include="WindowsBase.dll">
       <publishTime>03/16/2021 23:07:02</publishTime>

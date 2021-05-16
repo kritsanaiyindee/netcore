@@ -241,7 +241,7 @@ namespace netcoreapi.Models
                     .HasColumnType("datetime")
                     .HasColumnName("CREATED_ON");
 
-                entity.Property(e => e.Diffgrid).HasColumnName("diffgrid");
+                entity.Property(e => e.CaseID).HasColumnName("CaseID");
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
@@ -253,7 +253,7 @@ namespace netcoreapi.Models
                     .HasColumnType("datetime")
                     .HasColumnName("MODIFIED_ON");
 
-                entity.Property(e => e.MsdatarowOrder).HasColumnName("msdatarowOrder");
+                entity.Property(e => e.Dealer).HasColumnName("Dealer");
 
                 entity.Property(e => e.OutAddress).HasColumnName("OUT_ADDRESS");
 

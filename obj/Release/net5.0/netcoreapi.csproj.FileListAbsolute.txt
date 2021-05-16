@@ -150,3 +150,13 @@ C:\flutter\netcoreapi\netcore\obj\Release\net5.0\ref\netcoreapi.dll
 C:\flutter\netcoreapi\netcore\obj\Release\net5.0\netcoreapi.pdb
 C:\flutter\netcoreapi\netcore\obj\Release\net5.0\netcoreapi.genruntimeconfig.cache
 C:\flutter\netcoreapi\netcore\obj\Release\net5.0\netcoreapi.csprojAssemblyReference.cache
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Crm.Sdk.Proxy.dll
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Xrm.Sdk.Deployment.dll
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Xrm.Sdk.dll
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Xrm.Sdk.Workflow.dll
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Xrm.Tooling.Connector.dll
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Crm.Sdk.Proxy.xml
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Xrm.Sdk.xml
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Xrm.Sdk.Deployment.xml
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Xrm.Sdk.Workflow.xml
+C:\flutter\netcoreapi\netcore\bin\Release\net5.0\Microsoft.Xrm.Tooling.Connector.xml
